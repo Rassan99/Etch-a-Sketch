@@ -11,5 +11,20 @@ function createGrid(num){
 
     }
 }
+;
+document.body.onload = createGrid(20);
+const gridItem =Array.from(document.getElementsByClassName("whiteGrid"));
+// console.log(gridItem);
+// function changeColor (i){
+//     // console.log( gridItem[i]);
+//     // item.forEach(el => el.style.background = "red");
+//     gridItem[i].style.background = "green";
+// }
 
-document.body.onload = createGrid(6);
+// // gridItem.addEventListener("mouseover", changeColor(gridItem));
+
+for (let i = 0 ; i < gridItem.length; i++) {
+    gridItem[i].addEventListener('mouseover', () => {
+        gridItem[i].style.background = "pink";
+    })
+ }
