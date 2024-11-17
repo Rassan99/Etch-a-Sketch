@@ -10,3 +10,8 @@
     background: rgb(31, 148, 177);
 
 }
+#widthBtn{
+    width: fit-content;
+    margin: 10px;
+    font-size: 7px;
+}
