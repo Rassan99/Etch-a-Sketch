@@ -14,7 +14,8 @@ function createGrid(num) {
 
     const gridItem = Array.from(document.getElementsByClassName("whiteGrid"));
     for (let i = 0; i < gridItem.length; i++) {
-        gridItem[i].addEventListener('mouseover', () => {
+        gridItem[i]
+        .addEventListener('mouseover', () => {
             gridItem[i].style.background = "pink";
         });
     }
